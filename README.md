@@ -89,11 +89,9 @@ Supported storage backends
 * azureblob
 * filesystem (on-disk storage)
 * google-cloud-storage
-* hpcloud-objectstorage
 * openstack-swift
 * rackspace-cloudfiles-uk and rackspace-cloudfiles-us
 * s3
-* swift and swift-keystone (legacy)
 * transient (in-memory storage)
 
 Limitations
@@ -101,7 +99,7 @@ Limitations
 S3Proxy does not support:
 
 * AWS signature V4, see [#24](https://github.com/andrewgaul/s3proxy/issues/24)
-* POST uploads, see [#73](https://github.com/andrewgaul/s3proxy/issues/73)
+* POST upload policies, see [#73](https://github.com/andrewgaul/s3proxy/issues/73)
 * object metadata with filesystem provider on Mac OS X, see [JDK-8030048](https://bugs.openjdk.java.net/browse/JDK-8030048)
 * object server-side encryption
 * object versioning, see [#74](https://github.com/andrewgaul/s3proxy/issues/74)
@@ -109,8 +107,7 @@ S3Proxy does not support:
 
 S3Proxy emulates the following operations:
 
-* multi-part uploads, see [#2](https://github.com/andrewgaul/s3proxy/issues/2)
-* copy objects, see [#46](https://github.com/andrewgaul/s3proxy/issues/46)
+* copy multi-part objects, see [#76](https://github.com/andrewgaul/s3proxy/issues/76)
 
 References
 ----------
