@@ -1434,6 +1434,10 @@ final class S3ProxyHandler extends AbstractHandler {
                 }
             }
 
+            if (blobStoreType.equals("azureblob")) {
+                eTag = BaseEncoding.base16().lowerCase()
+                        .encode(BaseEncoding.base64().decode(contentMD5String));
+            }
             response.addHeader(HttpHeaders.ETAG, maybeQuoteETag(eTag));
         }
     }
