@@ -145,6 +145,7 @@ final class S3ProxyHandler extends AbstractHandler {
             "marker",
             "max-keys",
             "partNumber",
+            "part-number-marker",
             "prefix",
             "Signature",
             "uploadId",
